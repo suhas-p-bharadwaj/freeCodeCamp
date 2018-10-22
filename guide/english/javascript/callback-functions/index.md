@@ -78,4 +78,8 @@ In the above example, we make a mock request to a server. After 5 seconds elapse
 
 Also, if you are already familiar with `setTimeout`, then you've been using callback functions all along. The anonymous function argument passed into the above example's `setTimeout` function call is also a callback! So the example's original callback is actually executed by another callback. Be careful not to nest too many callbacks if you can help it, as this can lead to something called "callback hell"! As the name implies, it isn't a joy to deal with.
 
+## Interesting fact
+
+When the callback function is a method that uses the this object, we have to modify how we execute the callback function to preserve the this object context
+
 Please refer to this link for more details on "callback hell" : http://callbackhell.com/
